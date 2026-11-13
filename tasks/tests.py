@@ -36,6 +36,7 @@ class TaskAPITest(APITestCase):
             name='Test Project',
             owner=self.user
         )
+        self.client.force_authenticate(user=self.user)
 
     def test_create_task(self):
         data = {
