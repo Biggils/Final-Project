@@ -29,7 +29,10 @@ python manage.py migrate
 # 4. Create an admin user
 python manage.py createsuperuser
 
-# 5. Start the server
+# 5. Load demo data
+python manage.py seed
+
+# 6. Start the server
 python manage.py runserver
 ```
 
